@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Journey: Empowering Aspiring Developers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #ff4081;
+      --secondary-color: #f8bbd0;
+      --text-color: #333;
+      --background-color: #fff;
+      --font-family: 'Montserrat', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-family);
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: var(--background-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style-type: none;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      font-size: 18px;
+    }
+
+    nav ul li a:hover {
+      color: var(--secondary-color);
+    }
+
+    main {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 32px;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: var(--primary-color);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      font-size: 18px;
+    }
+
+    .cta-button:hover {
+      background-color: #e91e63;
+    }
+
+    footer {
+      background-color: #f5f5f5;
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      color: #888;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    footer a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    .roadmap-diagram {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    .stage {
+      flex: 1;
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-radius: 5px;
+      margin-right: 20px;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .stage:last-child {
+      margin-right: 0;
+    }
+
+    .stage:hover {
+      background-color: var(--secondary-color);
+    }
+
+    .stage h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .stage-content {
+      display: none;
+    }
+
+    .stage.expanded .stage-content {
+      display: block;
+    }
+
+    .resources-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .resources-list li {
+      margin-bottom: 10px;
+    }
+
+    .resources-list li a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .social-links {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .social-links li {
+      margin-bottom: 10px;
+    }
+
+    .social-links li a {
+      display: flex;
+      align-items: center;
+      color: var(--text-color);
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .social-links li i {
+      margin-right: 10px;
+      font-size: 24px;
+    }
+
+    .tweet-embed {
+      margin-top: 20px;
+    }
+
+    .validator-link {
+      display: block;
+      margin-top: 20px;
+      color: var(--primary-color);
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .validator-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Coding Journey</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#story">My Story</a></li>
+        <li><a href="#career">Career</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#resources">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Welcome to Coding Journey</h2>
+      <p>Hi, I'm Farah, and I created this website to support aspiring developers like myself. Join me on this coding journey and let's empower each other to achieve our goals!</p>
+      <p>Through <em>persistence</em>, <strong>self-motivation</strong>, and <i>continuous learning</i>, you can overcome obstacles and make progress in your coding journey.</p>
+      <blockquote>
+        "The only way to learn a new programming language is by writing programs in it." - Dennis Ritchie
+      </blockquote>
+      <p>Check out my tweets for more inspiration and updates:</p>
+      <div class="tweet-embed">
+        <!-- Embed your tweet here -->
+      </div>
+    </section>
+
+    <section id="story">
+      <h2>My Story</h2>
+      <p>My coding journey began in college when I started learning C++. Although there was no hands-on output through a computer, I was determined to learn programming. I read books like "Python 2nd Edition" and utilized free resources to expand my knowledge.</p>
+      <p>To further my learning, I created a roadmap that included HTML, CSS, and JavaScript. It was during this time that I discovered Holberton School's website, which has been instrumental in helping me develop this website.</p>
+      <p>Through persistence, self-motivation, and continuous learning, I have been able to overcome obstacles and make progress in my coding journey.</p>
+      <p>Remember:</p>
+      <blockquote style="color: #ff4081;">
+        "The only way to learn a new programming language is by writing programs in it." - Dennis Ritchie
+      </blockquote>
+      <p>Check out my tweets for more inspiration and updates:</p>
+      <div style="display: flex; justify-content: center;">
+        <blockquote class="twitter-tweet">
+           <a href="https://twitter.com/hashtag/WebDevelopment?src=hash&amp;ref_src=twsrc%5Etfw"><a href="https://twitter.com/farah96_7/status/1852404063930880502?ref_src=twsrc%5Etfw"></a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>                                            
+       </div> 
+    </section>
+
+    <section id="career">
+      <h2>Career Guidance</h2>
+      <p>Get tips and resources for job search, resume building, and interview preparation. Learn from experienced developers and industry professionals through blog posts and interviews.</p>
+      <a href="https://apply.holbertonschool.com/apply?after_signup_or_signin=1&country=lb" target="_blank" rel="noopener">
+        <img src="https://apply.holbertonschool.com/holberton-logo.png" alt="Holberton School">
+      </a>
+      <p>
+        <a href="https://yriry2.holbertonschool.com/login">
+          <i class="fas fa-school"></i> Community Forum
+        </a>
+      </p>
+    </section>
+
+    <section id="roadmap">
+      <h2>Roadmap for Learning HTML, CSS, and JavaScript</h2>
+      <div class="roadmap-diagram">
+        <div class="stage">
+          <div class="stage-header">
+            <h3>Stage 1</h3>
+          </div>
+          <div class="stage-content">
+            <ul>
+              <li>Learn HTML basics</li>
+              <li>Understand CSS fundamentals</li>
+              <li>Practice building simple websites</li>
+            </ul>
+          </div>
+        </div>
+        <div class="arrow">→</div>
+        <div class="stage">
+          <div class="stage-header">
+            <h3>Stage 2</h3>
+          </div>
+          <div class="stage-content">
+            <ul>
+              <li>Dive into JavaScript basics</li>
+              <li>Learn DOM manipulation</li>
+            </ul>
+          </div>
+        </div>
+        <div class="arrow">→</div>
+        <div class="stage">
+          <div class="stage-header">
+            <h3>Stage 3</h3>
+          </div>
+          <div class="stage-content">
+            <ul>
+              <li>Explore JavaScript frameworks</li>
+              <li>Build projects to apply knowledge</li>
+            </ul>
+          </div>
+        </div>
+        <div class="arrow">→</div>
+        <div class="stage">
+          <div class="stage-header">
+            <h3>Stage 4</h3>
+          </div>
+          <div class="stage-content">
+            <ul>
+              <li>Learn advanced topics</li>
+              <li>Continue building and learning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources">
+      <h2>Resources</h2>
+      <p>Explore our curated list of recommended resources to build a website :</p>
+      <ul class="resources-list">
+        <li><a href="https://www.simplehtmlguide.com/cheatsheet.php" target="_blank" rel="noopener">HTML Cheat Sheet</a></li>
+        <li><a href="https://validator.w3.org" target="_blank" rel="noopener">HTML Validator</a></li>
+        <li><a href="https://www.w3schools.com/js/js_if_else.asp" target="_blank" rel="noopener">JavaScript If/Else</a></li>
+      </ul>
+      <a href="https://validator.w3.org" target="_blank" rel="noopener" class="validator-link">Validate This Page</a>
+    </section>
+
+    <aside>
+      <section>
+        <h3>Connect with Me</h3>
+        <ul class="social-links">
+          <li>
+            <a href="https://discord.com/users/fara7773959">
+              <i class="fab fa-discord"></i> Join my Discord
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/farah96_7">
+              <i class="fab fa-twitter"></i> Follow me on X
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/FIFA777/portfolio">
+              <i class="fab fa-github"></i> View my GitHub
+            </a>
+          </li>
+        </ul>
+        
+      </section>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Coding Journey. All rights reserved.</p>
+  </footer>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const stages = document.querySelectorAll('.stage');
+
+      stages.forEach(function(stage) {
+        stage.addEventListener('click', function() {
+          if (this.classList.contains('expanded')) {
+            this.classList.remove('expanded');
+          } else {
+            stages.forEach(function(stg) {
+              stg.classList.remove('expanded');
+            });
+            this.classList.add('expanded');
+          }
+        });
+      });
+
+      const nav = document.querySelector('nav');
+      const header = document.querySelector('header');
+
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 0) {
+          nav.classList.add('sticky');
+          header.classList.add('sticky');
+        } else {
+          nav.classList.remove('sticky');
+          header.classList.remove('sticky');
+        }
+      });
+    });
+
+  </script>
+</body>
+</html>
